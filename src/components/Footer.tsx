@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <img
-                src="src/assets/Vector-2_white.svg"
+                src="/lovable-uploads/Vector-2_white.svg"
                 alt="NIMU Logo"
                 className="h-8"
               />

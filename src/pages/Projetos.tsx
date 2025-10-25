@@ -6,6 +6,12 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
+// Import images
+import imgExternas from "@/assets/externas/00_E.png";
+import imgInternas from "@/assets/internas/COWORKING 03_EDITADA_.jpg";
+import imgPlanta from "@/assets/planta/1- ap 32(1).jpg";
+import img360 from "@/assets/3dview.webp";
+
 const Projetos = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -17,7 +23,7 @@ const Projetos = () => {
       title: "Renderizações Externas",
       description:
         "Visualizações fotorrealistas de fachadas, entradas e áreas externas dos projetos.",
-      image: "/src/assets/externas/00_E.png",
+      image: imgExternas,
       link: "/projetos/externas",
       count: "11 projetos",
     },
@@ -26,7 +32,7 @@ const Projetos = () => {
       title: "Renderizações Internas",
       description:
         "Ambientes internos detalhados com iluminação, materiais e decoração realistas.",
-      image: "/src/assets/internas/COWORKING 03_EDITADA_.jpg",
+      image: imgInternas,
       link: "/projetos/internas",
       count: "17 projetos",
     },
@@ -35,7 +41,7 @@ const Projetos = () => {
       title: "Plantas Humanizadas",
       description:
         "Plantas baixas com representação humanizada de móveis, texturas e layouts.",
-      image: "/src/assets/planta/1- ap 32(1).jpg",
+      image: imgPlanta,
       link: "/projetos/planta-humanizada",
       count: "8 projetos",
     },
@@ -44,7 +50,7 @@ const Projetos = () => {
       title: "Tours Virtuais 360°",
       description:
         "Experiências imersivas com panoramas interativos de 360 graus.",
-      image: "/src/assets/3dview.webp",
+      image: img360,
       link: "/projetos/360",
       count: "7 panoramas",
     },
