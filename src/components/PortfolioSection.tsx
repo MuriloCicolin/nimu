@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { Link } from "react-router-dom";
 
 // Import portfolio images
 import img04 from "@/assets/nossoporf/04.jpg";
@@ -231,9 +232,11 @@ const PortfolioSection = () => {
         </Tabs>
 
         <div className="text-center">
-          <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity">
-            Ver Mais Projetos
-          </Button>
+          <Link to="/projetos">
+            <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity">
+              Ver Mais Projetos
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

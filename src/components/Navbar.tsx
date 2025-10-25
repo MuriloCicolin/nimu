@@ -23,11 +23,11 @@ const Navbar = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Sobre", href: "#sobre" },
-    { name: "Serviços", href: "#servicos" },
-    { name: "Projetos", href: "#projetos" },
-    { name: "Contato", href: "#contato" },
+    { name: "Home", href: "/#home", type: "link" },
+    { name: "Sobre", href: "/#sobre", type: "link" },
+    { name: "Serviços", href: "/#servicos", type: "link" },
+    { name: "Projetos", href: "/projetos", type: "link" },
+    { name: "Contato", href: "/#contato", type: "link" },
   ];
 
   return (
@@ -49,9 +49,9 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className={`transition-colors font-medium ${
                   isScrolled
                     ? "text-gray-900 hover:text-nimu-teal"
@@ -59,7 +59,7 @@ const Navbar = () => {
                 }`}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity">
               Solicitar orçamento
@@ -93,9 +93,9 @@ const Navbar = () => {
         <nav className="md:hidden bg-white shadow-lg">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
-                href={link.href}
+                to={link.href}
                 className={`py-2 block transition-colors ${
                   isScrolled
                     ? "text-[#00B1F3] hover:text-nimu-teal"
@@ -104,7 +104,7 @@ const Navbar = () => {
                 onClick={toggleMenu}
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
             <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity w-full">
               Solicitar Orçamento

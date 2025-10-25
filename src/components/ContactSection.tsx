@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -12,23 +11,27 @@ const ContactSection = () => {
     name: "",
     email: "",
     phone: "",
-    message: ""
+    message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form data submitted:", formData);
-    toast.success("Mensagem enviada com sucesso! Entraremos em contato em breve.");
+    toast.success(
+      "Mensagem enviada com sucesso! Entraremos em contato em breve."
+    );
     setFormData({
       name: "",
       email: "",
       phone: "",
-      message: ""
+      message: "",
     });
   };
 
@@ -40,7 +43,8 @@ const ContactSection = () => {
             Entre em <span className="text-gradient">Contato</span>
           </h2>
           <p className="text-gray-700">
-            Pronto para transformar seu projeto em imagens impressionantes? Entre em contato conosco agora mesmo.
+            Pronto para transformar seu projeto em imagens impressionantes?
+            Entre em contato conosco agora mesmo.
           </p>
         </div>
 
@@ -54,8 +58,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Endereço</h3>
-                    <p className="text-gray-600">Av. Paulista, 1000</p>
-                    <p className="text-gray-600">São Paulo, SP - Brasil</p>
+                    <p className="text-gray-600">Maringá, PR - Brasil</p>
                   </div>
                 </div>
 
@@ -65,8 +68,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Telefone</h3>
-                    <p className="text-gray-600">+55 (11) 9999-9999</p>
-                    <p className="text-gray-600">+55 (11) 8888-8888</p>
+                    <p className="text-gray-600">44 98824-0635</p>
                   </div>
                 </div>
 
@@ -77,7 +79,6 @@ const ContactSection = () => {
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Email</h3>
                     <p className="text-gray-600">contato@nimu.com.br</p>
-                    <p className="text-gray-600">comercial@nimu.com.br</p>
                   </div>
                 </div>
               </div>
@@ -89,7 +90,12 @@ const ContactSection = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700">Nome completo</label>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Nome completo
+                    </label>
                     <Input
                       id="name"
                       name="name"
@@ -100,7 +106,12 @@ const ContactSection = () => {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700"
+                    >
+                      Email
+                    </label>
                     <Input
                       id="email"
                       name="email"
@@ -114,7 +125,12 @@ const ContactSection = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Telefone</label>
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Telefone
+                  </label>
                   <Input
                     id="phone"
                     name="phone"
@@ -125,7 +141,12 @@ const ContactSection = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700">Mensagem</label>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Mensagem
+                  </label>
                   <Textarea
                     id="message"
                     name="message"
@@ -137,7 +158,10 @@ const ContactSection = () => {
                   />
                 </div>
 
-                <Button type="submit" className="w-full bg-gradient-nimu hover:opacity-90 transition-opacity">
+                <Button
+                  type="submit"
+                  className="w-full bg-gradient-nimu hover:opacity-90 transition-opacity"
+                >
                   Enviar mensagem
                 </Button>
               </form>

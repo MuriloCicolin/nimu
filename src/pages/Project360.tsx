@@ -70,10 +70,10 @@ const Project360 = () => {
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white pt-20">
         <div className="container mx-auto px-4 py-8">
           <div className="mb-8">
-            <Link to="/">
+            <Link to="/projetos">
               <Button variant="ghost" className="mb-4">
                 <ArrowLeft className="mr-2 h-4 w-4" />
-                Voltar ao início
+                Voltar aos projetos
               </Button>
             </Link>
             <h1 className="text-4xl font-bold mb-4 text-gradient">

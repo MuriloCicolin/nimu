@@ -24,23 +24,23 @@ const HeroSection = () => {
             <span className="text-gradient">realidade visual</span>
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8">
-            Somos especialistas em renderização 3D para arquitetos, construtoras
-            e incorporadoras. Criamos visualizações fotorrealistas que dão vida
-            aos seus projetos.
+            Venda mais e mais rápido, antes mesmo da obra começar tornamos seu
+            projeto arquitetônico em ferramenta de vendas poderosas com
+            visualizações 3D realistas e imersivas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
               size="lg"
               className="bg-gradient-nimu hover:opacity-90 transition-opacity"
             >
-              Conheça Nossos Trabalhos
+              Solicitar Proposta
             </Button>
             <Button
               size="lg"
               variant="outline"
               className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20"
             >
-              Entre em Contato
+              Ver Cases
             </Button>
           </div>
         </div>

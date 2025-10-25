@@ -83,10 +83,6 @@ const AboutSection = () => {
                   className="w-full h-auto object-cover"
                 />
               </div>
-              <div className="absolute bg-white p-4 rounded-lg shadow-lg -bottom-6 -right-6 md:bottom-8 md:right-8">
-                <p className="text-3xl font-bold text-gradient">+500</p>
-                <p className="text-gray-600">Projetos concluídos</p>
-              </div>
             </div>
           </div>
 
@@ -95,10 +91,13 @@ const AboutSection = () => {
               Sobre a <span className="text-gradient">NIMU</span>
             </h2>
             <p className="text-gray-700 mb-6">
-              Somos um estúdio especializado em visualização arquitetônica 3D,
-              focado em criar representações visuais de alta qualidade que
-              comunicam efetivamente a visão de arquitetos, construtoras e
-              incorporadoras.
+              A NIMU Studio é um estúdio criativo especializado em visualização
+              arquitetônica. Combinamos arte, técnica e narrativa para
+              transformar ideias em imagens que comunicam propósito. Nosso
+              trabalho une realismo, sensibilidade e storytelling para destacar
+              cada detalhe do seu projeto.  Nossa equipe combina conhecimento
+              técnico avançado com sensibilidade artística para entregar imagens
+              que não apenas mostram, mas emocionam e vendem.
             </p>
             <p className="text-gray-700 mb-6">
               Nossa equipe combina conhecimento técnico avançado com
@@ -129,9 +128,11 @@ const AboutSection = () => {
               ))}
             </div>
 
-            <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity">
-              Saiba Mais
-            </Button>
+            <div className="flex justify-center md:justify-start">
+              <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity px-12 py-6 text-lg">
+                Saiba Mais
+              </Button>
+            </div>
           </div>
         </div>
       </div>
