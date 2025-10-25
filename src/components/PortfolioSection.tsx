@@ -172,12 +172,12 @@ const PortfolioSection = () => {
 
   return (
     <section id="portfolio" className="section-padding bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <div className="container mx-auto px-6 sm:px-12 lg:px-20 xl:px-32">
+        <div className="text-center max-w-2xl mx-auto mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Nosso <span className="text-gradient">Portfólio</span>
           </h2>
-          <p className="text-gray-700">
+          <p className="text-gray-700 text-base">
             Conheça alguns dos nossos principais projetos e visualize a
             qualidade do nosso trabalho.
           </p>
@@ -187,10 +187,10 @@ const PortfolioSection = () => {
           defaultValue="todos"
           value={activeTab}
           onValueChange={setActiveTab}
-          className="mb-8"
+          className="mb-6"
         >
           <div className="flex justify-center">
-            <TabsList>
+            <TabsList className="text-sm">
               <TabsTrigger value="todos">Todos</TabsTrigger>
               <TabsTrigger value="exteriores">Exteriores</TabsTrigger>
               <TabsTrigger value="interiores">Interiores</TabsTrigger>

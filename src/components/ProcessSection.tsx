@@ -36,51 +36,51 @@ const ProcessSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 bg-white">
+      <div className="container mx-auto px-6 sm:px-12 lg:px-20 xl:px-32">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
             Processo <span className="text-gradient">Simples e Direto</span>
           </h2>
-          <p className="text-xl text-gray-600 mt-4">
+          <p className="text-lg text-gray-600 mt-3">
             Do briefing ao material pronto
           </p>
         </div>
 
         {/* Process Steps */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 lg:gap-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-5 lg:gap-3">
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
               <div key={index} className="relative">
-                <Card className="p-6 bg-white hover:bg-gray-50 transition-all duration-300 hover:shadow-xl border-2 border-gray-100 hover:border-nimu-teal group h-full">
+                <Card className="p-5 bg-white hover:bg-gray-50 transition-all duration-300 hover:shadow-xl border-2 border-gray-100 hover:border-nimu-teal group h-full">
                   {/* Step Number */}
-                  <div className="absolute -top-4 -left-4 w-10 h-10 bg-gradient-to-br from-nimu-teal to-nimu-blue rounded-full flex items-center justify-center shadow-lg">
-                    <span className="text-white font-bold text-lg">
+                  <div className="absolute -top-3 -left-3 w-8 h-8 bg-gradient-to-br from-nimu-teal to-nimu-blue rounded-full flex items-center justify-center shadow-lg">
+                    <span className="text-white font-bold text-base">
                       {step.number}
                     </span>
                   </div>
 
                   {/* Icon */}
-                  <div className="w-14 h-14 bg-gradient-to-br from-nimu-green/10 to-nimu-teal/10 rounded-xl flex items-center justify-center mb-4 mt-2 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="w-7 h-7 text-nimu-teal" />
+                  <div className="w-11 h-11 bg-gradient-to-br from-nimu-green/10 to-nimu-teal/10 rounded-xl flex items-center justify-center mb-3 mt-1 group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="w-5 h-5 text-nimu-teal" />
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-base font-bold text-gray-900 mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     {step.description}
                   </p>
                 </Card>
 
                 {/* Arrow Connector (hidden on mobile and last item) */}
                 {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-2 transform -translate-y-1/2 z-10">
+                  <div className="hidden lg:block absolute top-1/2 -right-1.5 transform -translate-y-1/2 z-10">
                     <svg
-                      className="w-4 h-4 text-nimu-teal"
+                      className="w-3 h-3 text-nimu-teal"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >

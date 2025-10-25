@@ -17,26 +17,21 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-        <div className="max-w-3xl animate-fade-in">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Transformando ideias em{" "}
-            <span className="text-gradient">realidade visual</span>
+      <div className="container mx-auto px-6 sm:px-12 lg:px-20 xl:px-32 relative z-20">
+        <div className="max-w-2xl animate-fade-in">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5">
+            Venda mais e mais rápido, antes mesmo da{" "}
+            <span className="text-gradient">obra começar</span>
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8">
-            Venda mais e mais rápido, antes mesmo da obra começar tornamos seu
-            projeto arquitetônico em ferramenta de vendas poderosas com
-            visualizações 3D realistas e imersivas.
+          <p className="text-base md:text-lg text-white/90 mb-6">
+            Tornamos seu projeto arquitetônico em ferramenta de vendas poderosas
+            com visualizações 3D realistas e imersivas.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button
-              size="lg"
-              className="bg-gradient-nimu hover:opacity-90 transition-opacity"
-            >
+          <div className="flex flex-col sm:flex-row gap-3">
+            <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity">
               Solicitar Proposta
             </Button>
             <Button
-              size="lg"
               variant="outline"
               className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20"
             >

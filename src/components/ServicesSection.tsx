@@ -136,31 +136,33 @@ const ServicesSection = () => {
 
   return (
     <section id="servicos" className="section-padding bg-white">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <div className="container mx-auto px-6 sm:px-12 lg:px-20 xl:px-32">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Nossos <span className="text-gradient">Serviços</span>
           </h2>
-          <p className="text-gray-700">
+          <p className="text-gray-700 text-base">
             Oferecemos soluções completas de visualização 3D para transformar
             seus projetos em apresentações impactantes que encantam e convencem.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((service, index) => (
             <Card
               key={index}
               className="transition-all hover:shadow-md hover:-translate-y-1"
             >
               <CardHeader>
-                <div className="flex items-center mb-4">
-                  <div className="bg-gradient-nimu p-3 rounded-lg text-white">
+                <div className="flex items-center mb-3">
+                  <div className="bg-gradient-nimu p-2.5 rounded-lg text-white">
                     {service.icon}
                   </div>
                 </div>
-                <CardTitle>{service.title}</CardTitle>
-                <CardDescription>{service.description}</CardDescription>
+                <CardTitle className="text-lg">{service.title}</CardTitle>
+                <CardDescription className="text-sm">
+                  {service.description}
+                </CardDescription>
               </CardHeader>
             </Card>
           ))}
