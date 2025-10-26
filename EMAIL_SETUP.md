@@ -99,17 +99,20 @@ As credenciais do EmailJS ficam no arquivo `.env` que **NÃO** é commitado no G
 Se preferir outra solução, aqui estão alternativas:
 
 ### Opção 2: Web3Forms (Mais Simples)
+
 - Gratuito até 250 emails/mês
 - Não precisa de biblioteca JavaScript
 - Basta adicionar uma chave de API no formulário
 
 ### Opção 3: FormSubmit
+
 - Totalmente gratuito
 - Sem limite de emails
 - Não precisa de JavaScript
 - Apenas adiciona o email no action do form
 
 ### Opção 4: Backend Próprio
+
 - Total controle
 - Criar API em Node.js + Nodemailer
 - Requer servidor backend
@@ -117,6 +120,7 @@ Se preferir outra solução, aqui estão alternativas:
 ## 📞 Suporte
 
 Se tiver problemas, verifique:
+
 1. As credenciais no arquivo `.env` estão corretas
 2. O serviço de email está conectado no EmailJS
 3. O console do navegador para ver erros
