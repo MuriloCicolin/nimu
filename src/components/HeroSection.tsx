@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -28,15 +29,19 @@ const HeroSection = () => {
             com visualizações 3D realistas e imersivas.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
-            <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity">
-              Solicitar Proposta
-            </Button>
-            <Button
-              variant="outline"
-              className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20"
-            >
-              Ver Cases
-            </Button>
+            <Link to="/#contato">
+              <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity w-full sm:w-auto">
+                Solicitar Proposta
+              </Button>
+            </Link>
+            <Link to="/projetos">
+              <Button
+                variant="outline"
+                className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20 w-full sm:w-auto"
+              >
+                Ver Cases
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -61,9 +61,11 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity">
-              Solicitar orçamento
-            </Button>
+            <Link to="/#contato">
+              <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity">
+                Solicitar orçamento
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -106,9 +108,11 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity w-full">
-              Solicitar Orçamento
-            </Button>
+            <Link to="/#contato" onClick={toggleMenu}>
+              <Button className="bg-gradient-nimu hover:opacity-90 transition-opacity w-full">
+                Solicitar Orçamento
+              </Button>
+            </Link>
           </div>
         </nav>
       )}

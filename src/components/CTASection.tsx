@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const CTASection = () => {
   return (
@@ -13,9 +14,11 @@ const CTASection = () => {
             seu empreendimento.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3">
-            <Button className="bg-white text-gray-900 hover:bg-gray-100">
-              Falar com Especialista
-            </Button>
+            <Link to="/#contato">
+              <Button className="bg-white text-gray-900 hover:bg-gray-100">
+                Falar com Especialista
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
