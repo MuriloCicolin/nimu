@@ -110,7 +110,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-base mb-1">Email</h3>
-                    <p className="text-gray-600">contato@nimu.com.br</p>
+                    <p className="text-gray-600">contato@nimustudio.com.br</p>
                   </div>
                 </div>
               </div>

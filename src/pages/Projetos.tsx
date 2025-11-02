@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -144,6 +145,7 @@ const Projetos = () => {
       </section>
 
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

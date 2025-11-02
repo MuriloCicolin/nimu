@@ -22,7 +22,9 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/nimustudio/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white hover:text-nimu-green transition-colors"
               >
                 <svg
